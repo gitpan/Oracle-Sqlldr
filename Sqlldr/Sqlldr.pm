@@ -45,8 +45,6 @@ Whilst you are calling the method C<execute()>, Oracle::Sqlldr is calling C<sqll
 
 =head1 EXAMPLE
 
-#!/usr/local/bin/perl
-
 use strict;
 use warnings;
 use Oracle::Sqlldr;
@@ -85,11 +83,12 @@ C<Oracle::SQLLoader>
 
 
 
-use 5.006;
+require 5.006;
 use strict;
 use warnings;
 use Carp qw/carp croak/;
 use DBI;
+use vars qw /$VERSION $bin/;
 
 #require Exporter;
 
@@ -102,9 +101,9 @@ use DBI;
 #our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 #our @EXPORT = qw( );
 
-our $VERSION = '0.12';
+$VERSION = '0.13';
 
-our $bin = 'sqlldr';
+$bin = 'sqlldr';
 
 
 =item new
