@@ -71,8 +71,6 @@ my $r = $sqlldr->execute() or die "cannot execute sqlldr";
 
 print "output from Oracle::Sqlldr: $r\n";
 
-:wq
-
 =head1 AUTHOR
 
 Andrew McGregor, E<lt>mcgregor@cpan.orgE<gt>
@@ -104,7 +102,7 @@ use DBI;
 #our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 #our @EXPORT = qw( );
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 our $bin = 'sqlldr';
 
